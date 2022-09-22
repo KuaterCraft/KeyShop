@@ -20,9 +20,8 @@ use onebone\economyapi\EconomyAPI;
 
 class Main extends PluginBase implements Listener {
     public function onEnable() : void {
-      $this->getServer()->getPluginManager()->registerEvents($this, $this);
-      $this->saveResource("config.yml");
-      $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
+      $this->saveDefaultConfig();
+	  $this->reloadConfig();
     }
   
     public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
