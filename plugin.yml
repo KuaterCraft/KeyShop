@@ -12,6 +12,6 @@ commands:
 
 permissions:
   keyshop.cmd:
-    description: "KeyShop Permission"
+    description: "KeyShop Permissions"
     default: true
 depend: ["PiggyCrates", "EconomyAPI"]
