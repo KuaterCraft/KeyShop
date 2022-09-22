@@ -19,11 +19,18 @@ use KuaterCraft\KeyShop\Form\SimpleForm;
 use onebone\economyapi\EconomyAPI;
 
 class Main extends PluginBase implements Listener {
-    public function onEnable() : void {
-      $this->getServer()->getPluginManager()->registerEvents($this, $this);
-      $this->saveResource("config.yml");
-      $this->getConfig() = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
-    }
+	public function onEnable(): void {
+		$this->saveDefaultConfig();
+		$this->reloadConfig();
+
+		if($this->getConfig()->get("enabled")) {
+			$this->initTasks();
+		}
+		
+		if($this->enabled) {
+			$this->sendToDiscord("-------KeyShop enabled-------");
+		}
+	}
   
     public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
     
