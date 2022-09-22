@@ -52,7 +52,7 @@ class Main extends PluginBase implements Listener {
               $player->sendMessage($this->getConfig()->get($data)["Message"]["Failed"]);
             }
       });
-      $mymoney = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI")->myMoney($player);
+      $mymoney = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI")->mymoney($player);
       $form->setTitle($this->getConfig()->get("Title"));
       $form->setContent("§4⨠ §eHi, §b" . $player->getName() . "\n§6⨠ §eYour Balance §a" . $mymoney);
       $form->addButton("§l§cExit\n§r§8Tap To Exit", 0, "textures/ui/cancel");
