@@ -1,6 +1,6 @@
 name: KeyShop
 main: KuaterCraft\KeyShop\Main
-version: 2.7
+version: 1.0.0
 api: 4.0.0
 author: KuaterCraft
 description: "Open KeyShop Menu"
