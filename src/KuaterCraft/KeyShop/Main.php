@@ -52,8 +52,9 @@ class Main extends PluginBase implements Listener {
               $player->sendMessage($this->getConfig()->get($data)["Message"]["Failed"]);
             }
       });
+      $money = EconomyAPI::getInstance()->myMoney($player);
       $form->setTitle($this->getConfig()->get("Title"));
-      $form->setContent("§4⨠ §eHi, §b" . $player->getName() . "\n§6⨠ §eYour Balance §a" . $mymoney);
+      $form->setContent("§4⨠ §eHi, §b" . $player->getName() . "\n§6⨠ §eYour Balance §a" . $myMoney);
       $form->addButton("§l§cExit\n§r§8Tap To Exit", 0, "textures/ui/cancel");
       for($i = 1;$i <= 100;$i++){
           if($this->getConfig()->exists($i)){
