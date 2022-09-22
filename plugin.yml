@@ -1,0 +1,17 @@
+name: KeyShop
+main: KuaterCraft\KeyShop\Main
+version: 2.7
+api: 4.0.0
+author: KuaterCraft
+description: "Open KeyShop Menu"
+
+commands:
+  keyshop:
+    description: "Open The KeyShop"
+    permission: keyshop.cmd
+
+permissions:
+  keyshop.cmd:
+    description: "KeyShop Permission"
+    default: true
+depend: ["PiggyCrates", "EconomyAPI"]

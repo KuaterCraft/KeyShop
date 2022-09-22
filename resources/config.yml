@@ -1,0 +1,28 @@
+#name: KeyShop
+#Dev: kuatercraft#0062
+#Want to color text? use "§" for coloring full documentation on coloring text here: **https://www.digminecraft.com/lists/sign_color_list_bedrock.php**
+#Dependency: EconomyAPI , PiggyCrates!!
+
+Title: "Keyshop"
+#Use whatever title you want!
+
+#Example
+#1:
+#  Key:
+#    Name: "Test" # Key Name
+#    Price: 1000 # Price key
+#  Button:
+#    Name: "§l§eTest Key" # Button Name
+#  Message:
+#    Succes: "§aSucces buy a key Test" # Success Message Buy A Key
+#    Failed: "§cYour money is not enough" # Failed Message Buy A Key
+
+1:
+  Key:
+    Name: "Common"
+    Price: 1000
+  Button:
+    Name: "§l§eCommon Key"
+  Message:
+    Succes: "§aSucces buy a key Common"
+    Failed: "§cYour money is not enough"
