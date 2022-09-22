@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
     public function onEnable() : void {
       $this->getServer()->getPluginManager()->registerEvents($this, $this);
       $this->saveResource("config.yml");
-      $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
+      $this->getConfig() = new Config($this->getDataFolder() . "config.yml", Config::YAML, array());
     }
   
     public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
@@ -53,7 +53,7 @@ class Main extends PluginBase implements Listener {
               $player->sendMessage($this->getConfig()->get($data)["Message"]["Failed"]);
             }
       });
-      $mymoney = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI")->myMoney($player);
+      $money = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI")->myMoney($player);
       $form->setTitle($this->getConfig()->get("Title"));
       $form->setContent("§4⨠ §eHi, §b" . $player->getName() . "\n§6⨠ §eYour Balance §a" . $mymoney);
       $form->addButton("§l§cExit\n§r§8Tap To Exit", 0, "textures/ui/cancel");
