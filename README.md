@@ -1,7 +1,7 @@
 <img src="https://i.imgur.com/MxTeS95h.jpg" width="30%">
 
 # KeyShop
-[![License](https://img.shields.io/github/license/KuaterCraft/KeyShop?color=green&label=License)](https://github.com/KuaterCraft/KeyShop/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/KuaterCraft/KeyShop?color=g)](https://github.com/KuaterCraft/KeyShop/blob/main/LICENSE)
 [![](https://poggit.pmmp.io/shield.state/KeyShop)](https://poggit.pmmp.io/p/KeyShop)
 [![Version](https://img.shields.io/github/v/release/KuaterCraft/KeyShop)](https://github.com/KuaterCraft/KeyShop/releases/latest)
 [![Discord](https://img.shields.io/discord/923478312830001162?label=Discord)](https://discord.gg/zQ3SQ4zzN5)
